@@ -7,8 +7,8 @@ import calculator.expression.Operator;
 import java.math.BigDecimal;
 
 public class BigDecimalSubtractOperator extends Operator<BigDecimal> {
-    public BigDecimalSubtractOperator(Sign sign) {
-        super(sign);
+    public BigDecimalSubtractOperator(){
+        super(Sign.SUBTRACT);
     }
 
     @Override

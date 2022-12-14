@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 
 public class BigDecimalAddOperator extends Operator<BigDecimal> {
 
-    public BigDecimalAddOperator(Sign sign) {
-        super(sign);
+    public BigDecimalAddOperator() {
+        super(Sign.ADD);
     }
 
     @Override

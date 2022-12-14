@@ -27,13 +27,13 @@ public class BigDecimalExpressionParser extends ExpressionParser<BigDecimal> {
     protected Operator<BigDecimal> operatorFromSign(Sign sign) {
         switch(sign){
             case ADD:
-                return new BigDecimalAddOperator(sign);
+                return new BigDecimalAddOperator();
             case SUBTRACT:
-                return new BigDecimalSubtractOperator(sign);
+                return new BigDecimalSubtractOperator();
             case MULTIPLY:
-                return new BigDecimalMultiplyOperator(sign);
+                return new BigDecimalMultiplyOperator();
             case DIVIDE:
-                return new BigDecimalDivideOperator(sign);
+                return new BigDecimalDivideOperator();
             default:
                 throw new IllegalArgumentException();
         }
